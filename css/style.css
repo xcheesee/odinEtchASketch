@@ -1,18 +1,43 @@
 body{
     margin:0;
+    
+    /* not needed
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    height: 100vh;*/
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 40vw;
+    border: groove green;
+    align-self: center;
+    margin: auto;
 }
 
 .row {
     display: flex;
-    background-color: blue;
+    background-color: white;
     color: blue;
     flex: 1 0 0%;
 }
 
 .column {
     flex-basis: 100%;
+}
+
+.hoverColor {
+    background-color: black !important;
+}
+
+button {
+    margin: 0 50%;
+    align-self: center;
+}
+
+h1, p {
+    text-align: center;
 }
