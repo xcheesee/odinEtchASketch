@@ -9,7 +9,7 @@ function clearBoard() {
 }
 
 
-const gridDimension = 16;
+const gridDimension = 50;
 let gridEle = [];
 const body = document.querySelector("body")
 const container = document.querySelector(".container")
