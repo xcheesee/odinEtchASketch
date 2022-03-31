@@ -11,3 +11,7 @@ It takes its dimensions as input from users, change colors based on a mouseover 
 * Create a page from scratch
 * Practice DOM manipulation
 * Create a dinamic page with JS methods and functions
+
+# Preview
+
+Live preview @ https://xcheesee.github.io/odinEtchASketch/
