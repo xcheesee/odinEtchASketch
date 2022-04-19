@@ -29,9 +29,14 @@ body{
     flex-basis: 100%;
 }
 
-.hoverColor {
+.black {
     background-color: black !important;
 }
+
+.white {
+    background-color: white;
+}
+
 
 button {
     margin: 0 50%;
