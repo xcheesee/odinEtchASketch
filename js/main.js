@@ -30,8 +30,10 @@ function changeColor(element) {
     return
 }
 
+// used to determine mode in changeColor
 function classChange(element) {
-    let selectedMode = element.target.classList[0]
+    let buttonClass = element.target.classList[0]
+    let selectedMode = buttonClass
     containers = document.querySelectorAll(".column")
     containers.forEach(container => {
         container.classList.remove(currMode)
@@ -39,6 +41,7 @@ function classChange(element) {
         return;
     })
     clearBoard();
+    //var used to determine mode in changeColor
     currMode = selectedMode;
     return
 }
@@ -67,7 +70,9 @@ for(let i = 0; i < gridDimension; i++) {
         gridEle[i][j].classList.add(`column`)
         gridEle[i].appendChild(gridEle[i][j])
         gridEle[i][j].addEventListener("mouseover", changeColor)
+        //used inline css to be able to change colors in js function
         gridEle[i][j].style.backgroundColor = "#ffffff";
+        //object used to determine shade strenght in changeColor/gradient
         gridEle[i][j]["currGradient"] = 255;
     }
     container.appendChild(gridEle[i])
